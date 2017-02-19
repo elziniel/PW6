@@ -1,0 +1,30 @@
+$(document).ready(function(){
+	$("#send").prop("disabled", true);
+	$("input").on("input", function(){
+		var vide = false;
+		if($("#identifiant").val() == ""){
+			vide = true;
+		}
+		if($("#mdp").val() == ""){
+			vide = true;
+		}
+		if(vide){
+			$("#send").prop("disabled", true);
+		}
+		else{
+			$("#send").prop("disabled", false);
+		}
+	});
+	$("#send").click(function(){
+		console.log("lol");
+		envoyer();
+	});
+});
+
+function envoyer(){
+	console.log("lol");
+	var tab = new Array(2);
+	tab["id"] = $("#identifiant").val();
+	tab["mdp"] = $("#mdp").val();
+	$.get("minichat", JSON.stringify(tab), NULL);
+}

@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Connexion</title>
+	<link rel="stylesheet" href="log_style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="log_script.js"></script>
+</head>
+<body>
+	<div id="header">
+		<h1><marquee direction="right">Bienvenue à la page d'accès au mini-chat</marquee></h1>
+	</div>
+	<div id="log_in">
+		<form action="/confirm" method="POST">
+			<div><input type="text" name="log_id" id="log_id" placeholder="Login"></div>
+			<div><input type="password" name="log_pass" id="log_pass" placeholder="Mot de passe"></div>
+			<p><input type="button" value="Envoyer" id="log_send"></p>
+		</form>
+	</div>
+	<p><input type="button" value="S'inscrire" id="inscr"></p>
+	<div id="sign_in">
+		<form action="/confirm" method="POST">
+			<p>
+				<label for="sign_civstate">Etat civil</label>
+				<select id="sign_civstate">
+					<option value="M.">M.</option>
+					<option value="Mme">Mme</option>
+				</select>
+			</p>
+			<p>
+				<label for="sign_lastname" id="sign_lnlab">Nom</label>
+				<input type="text" name="sign_lastname" id="sign_lastname">
+			</p>
+			<p>
+				<label for="sign_firstname" id="sign_fnlab">Prénom</label>
+				<input type="text" name="sign_firstname" id="sign_firstname">
+			</p>
+			<p>
+				<label for="sign_fullname">Nom complet</label>
+				<input type="text" name="sign_fullname" id="sign_fullname" disabled>
+			</p>
+			<p>
+				<label for="sign_logname" id="sign_lognamelab">Nom de login</label>
+				<input type="text" name="sign_logname" id="sign_logname">
+			</p>
+			<p>
+				<label for="sign_pass" id="sign_plab">Mot de passe</label>
+				<input type="password" name="sign_pass" id="sign_pass">
+			</p>
+			<p>
+				<label for="sign_pass_conf" id="sign_pclab">Mot de passe (confirmation)</label>
+				<input type="password" name="sign_pass_conf" id="sign_pass_conf">
+			</p>
+			<p>
+				<label for="sign_disp_pass">Afficher mot de passe</label>
+				<input type="checkbox" name="sign_disp_pass" id="sign_disp_pass">
+			</p>
+			<p>
+				<input type="reset" value="Réinitialiser">
+				<input type="button" value="Envoyer" id="sign_send">
+			</p>
+		</form>
+	</div>
+</body>

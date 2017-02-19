@@ -1,0 +1,31 @@
+#logoP7{
+	width: 100%;
+	height: 300px;
+}
+
+#logo4chan{
+	width: 100px;
+	height: 100px;
+	float: left;
+}
+
+#contenu{
+	overflow: hidden;
+}
+
+#nav{
+	width: 150px;
+	background-color: yellow;
+	position: absolute;
+}
+
+#desc{
+	width: 300px;
+	background-color: yellow;
+	float: left;
+	margin-left: 160px;
+}
+
+a{
+	color: blue;
+}

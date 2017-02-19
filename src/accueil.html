@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Accueil</title>
+	<link rel="stylesheet" href="acc_style.css">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	<script type="text/javascript" src="acc_script.js"></script>
+</head>
+<body>
+	<a href="http://www.univ-paris-diderot.fr/sc/site.php?bc=accueil&np=accueil">
+		<img id="logoP7" src="logo_paris_diderot.jpg">
+	</a>
+	<div id="header">
+		<h1>PAGE D'ACCUEIL</h1>
+	</div>
+	<div id="contenu">
+		<div id="nav">
+			<div><a href="http://didel.script.univ-paris-diderot.fr/index.php">DidEL</a></div>
+			<div><a href="http://www.informatique.univ-paris-diderot.fr/wiki/doku.php?id=accueil">UFR Informatique</a></div>
+			<div><a href="http://portail.univ-paris-diderot.fr/render.userLayoutRootNode.uP">Portail ENT</a></div>
+			<div><a href="/login">Mini-chat</a></div>
+		</div>
+		<div id="desc">
+			<img id="logo4chan" src="logo_4chan.png">
+			<div>Le serveur fonctionne partiellement, il ne sert qu'à afficher les pages. Le lien Mini-chat mène à la page de connexion mais la connexion est impossible. La moyenne des notes est stockée localement.</div>
+		</div>
+	</div>
+	<p id="rate">
+		Mettez une note d'appréciation du site de 1 à 10 
+		<!-- input de type range au lieu du type text -->
+		<input type="range" name="note_range" id="note" value=0 min=0 max=10>
+		<span id="note_show"></span>
+		<input type="button" value="Soumettre" id="send" disabled>
+</p>
+<p id="avg">
+		<input type="button" value="Moyenne des notes" id="avg_calc">
+		<span id="avg_show"></span>
+	</p>
+	<div id="footer">
+		<div>ESCANDELL Esteban</div>
+		<div>esteban.escandell@gmail.com</div>
+	</div>
+</body>

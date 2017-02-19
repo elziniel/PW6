@@ -1,0 +1,18 @@
+#header{
+	color: red;
+	position: relative;
+}
+
+#log_in{
+	border-bottom: 1px solid red;
+}
+
+#sign_in{
+	display: none;
+}
+
+p label{
+	display: inline-block;
+	vertical-align: baseline;
+	width: 300px;
+}
